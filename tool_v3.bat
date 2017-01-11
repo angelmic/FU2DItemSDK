@@ -5,6 +5,7 @@ set /p name=Please input the package name:
 
 tools\tool2d-v3.exe %name%
 xcopy /i /s /e res_v3\%name%\*.glsl out\ /Y /Q
+xcopy /i /s /e res_v3\%name%\*.js out\ /Y /Q
 cd out
 ..\tools\cwebp.exe -q 75 -o bigtex.webp bigtex.png
 move bigtex.webp bigtex.png
